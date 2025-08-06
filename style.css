@@ -1,0 +1,72 @@
+.container{
+    max-width: 1440px;
+    padding: 0 200px;
+    margin: 0 auto;
+}
+
+.app{
+    padding: 100px;
+    background-color: lightgrey;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.card{
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    width: 300px;
+    position: relative;   
+}
+
+.card-content{
+    font-size: 20px;
+    margin: 0 0 20px;
+    color: black;
+    font-weight: 700;
+}
+
+.card-title__label{
+    font-size: 16px;
+    color: grey;
+    margin: 0 0 10px;
+}
+
+.btn-card{
+    color: rgb(100, 200, 233);
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid rgb(100, 200, 233);
+    border-radius: 16px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.modal-window{
+    border: none;
+    border-radius: 8px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 30vw;
+}
+
+.modal-window::backdrop{
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-title{
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0;
+}
+
+.modal-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
