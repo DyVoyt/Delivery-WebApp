@@ -8,11 +8,11 @@ const deliveryArr = [
 ]
 
 const app = document.querySelector('.app');
-const bodyEl = document.querySelector('body');
 
-deliveryArr.forEach(element => {
-    app.append(element.getCard())
-    element.getIdButton = '3'
-})
+for(let key in deliveryArr){
+   
+    app.append(deliveryArr[key].getCard(key))
+}
+
 
 

@@ -1,0 +1,83 @@
+.modal-window{
+    border: none;
+    border-radius: 8px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 30vw;
+    position: relative;
+}
+
+.modal-window::backdrop{
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-title{
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0;
+}
+
+.modal-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-close{
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.btn-close::after{
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 3px;
+    background-color: black;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+    transform: rotate(45deg);
+}
+
+.btn-close::before{
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 3px;
+    background-color: black;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+    transform: rotate(-45deg);
+}
+
+.modal-field{
+    height: 30px;
+    border: 1px solid lightgray; 
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.modal-field:focus{
+    outline: 1px solid rgb(100, 200, 233);
+}
+
+.btn-blue{
+    border-radius: 8px;
+    background-color: blue;
+    font-size: 20px;
+    color: white;
+    padding: 15px;display: flex;
+    align-items: center;
+    justify-content: center;
+}
